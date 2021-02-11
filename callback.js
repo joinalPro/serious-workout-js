@@ -11,7 +11,7 @@ function takeShower(){
     console.log('Take Shower')
 }
 function readingBook(){
-    console.log('Reading lots of book and speed now very high');
+    console.log('Reading lots of book and feeling well');
 }
 explain_callback ('Joinal', 33, washHand);
 explain_callback ('Abdul', 34, takeShower);
