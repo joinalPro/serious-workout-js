@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article{
+            border: 2px solid tomato;
+            border-radius: 20px;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+   <section>
+        <h3>Exploring DOM</h3>
+        <article>
+            <h3>article-1</h3>
+            <p class="author">author-1</p>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga dolorem consequatur eveniet. Possimus aliquid labore corrupti, inventore delectus sint asperiores dolorem enim, sit reiciendis natus, praesentium iusto totam nihil itaque.</p>
+        </article>
+        <article class="special">
+            <h3>article-2</h3>
+            <p class="author">author-2</p>
+            <p class="description">Reprehenderit fugit tempora sed excepturi dolorum. Ullam cumque, voluptatibus voluptatem ab cum sed! Veniam suscipit ipsam magnam blanditiis ratione recusandae libero adipisci optio nemo quas aut porro deserunt, totam possimus!</p>
+        </article>
+        <article>
+            <h3>article-3</h3>
+            <p class="author">author-3</p>
+            <p class="description">Aut, mollitia consequuntur. Voluptates quam, magni accusamus voluptatum architecto omnis voluptatem nulla obcaecati provident, aliquid nihil placeat recusandae facilis laudantium! Aliquam quos nobis vel numquam, provident praesentium repellendus dicta sit.</p>
+        </article>
+   </section>
+   <script>
+       var authors = document.getElementsByClassName('author')
+       for(var i = 0; i < authors.length; i++){
+           var element = authors[i];
+           console.log(element.innerHTML);
+           element.innerHTML = 'Lekhok-'+ (i+1);
+       }
+   </script>
+</body>
+</html>
